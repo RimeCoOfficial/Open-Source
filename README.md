@@ -1,0 +1,2 @@
+# Open-Source
+rime.social
