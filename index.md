@@ -13,7 +13,7 @@ layout: default
 
 <h1>Organization Members</h1>
 <ol>
-    {% for contributor in site.github.contributors %}
+    {% for contributor in site.github.organization_members %}
         <li>
             {{ contributor.login }}
         </li>
