@@ -5,7 +5,3 @@ highlighter:      rouge
 # gems:             [jekyll-github-metadata]
 
 owner_name:       Rime
-
-defaults:
-  - values:
-      layout:     default
