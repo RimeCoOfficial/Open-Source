@@ -6,7 +6,11 @@ layout: default
 <ul>
     {% for repo in site.github.public_repositories %}
         <li>
-            {{ repo.full_name }}
+            <p>
+                <a href="{{ repo.html_url }}">{{ repo.name }}</a> {{ repo.description }}
+                <br>
+                <small>{{ repo.language }} {{ repo.updated_at | time_tag: '%b %d, %Y' }}</small>
+            </p>
         </li>
     {% endfor %}
 </ul>
@@ -15,7 +19,7 @@ layout: default
 <ol>
     {% for contributor in site.github.organization_members %}
         <li>
-            {{ contributor.login }}
+            <a href="{{ contributor.html_url }}">{{ contributor.login }}</a>
         </li>
     {% endfor %}
 </ol>
