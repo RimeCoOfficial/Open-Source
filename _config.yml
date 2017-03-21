@@ -1,0 +1,5 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+gems:             [jekyll-github-metadata]
