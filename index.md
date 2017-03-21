@@ -23,3 +23,7 @@ layout: default
         </li>
     {% endfor %}
 </ol>
+
+<p>
+    Build Revision: <a href="./site.github.json">{{ site.github.build_revision | truncate: 7, "" }}</a>
+</p>
