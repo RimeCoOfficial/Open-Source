@@ -15,21 +15,17 @@
     <body>
     <div class="wrapper">
       <header>
-        <h1>Minimal</h1>
-        <p>A Theme for GitHub Pages</p>
+        <h1>{{ site.github.project_title }}</h1>
+        <p>{{ site.github.project_tagline }}</p>
         <p class="view"><a href="http://github.com/orderedlist/minimal">View the Project on GitHub <small>orderedlist/minimal</small></a></p>
         <ul>
-            <li><a href="https://github.com/orderedlist/minimal/zipball/master">Download <strong>ZIP File</strong></a></li>
+            <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
             <li><a href="https://github.com/orderedlist/minimal/tarball/master">Download <strong>TAR Ball</strong></a></li>
-            <li><a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a></li>
+            <li><a href="{{ site.github.clone_url }}">Fork On <strong>GitHub</strong></a></li>
         </ul>
         </header>
         <section>
-            <h1>{{ site.title }}</h1>
-
-            <pre>
-                {{ site.github | jsonify }}
-            </pre>
+            {{ content }}
         </section>
         <footer>
             <p>This project is maintained by <a href="http://github.com/orderedlist">Steve Smith</a></p>

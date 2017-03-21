@@ -2,6 +2,8 @@
 markdown:         kramdown
 highlighter:      rouge
 
-gems:             [jekyll-github-metadata]
+# gems:             [jekyll-github-metadata]
 
-title:            GitHub Flavored Markdown
+defaults:
+  - values:
+      layout:     default
