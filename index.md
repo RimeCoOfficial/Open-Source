@@ -9,7 +9,7 @@ layout: default
             <p>
                 <a href="{{ repo.html_url }}">{{ repo.name }}</a> {{ repo.description }}
                 <br>
-                <small>{{ repo.language }} {{ repo.updated_at | time_tag: '%b %d, %Y' }}</small>
+                <small><b>{{ repo.language }}</b> Updated on {{ repo.updated_at | date: "%b %d, %Y" }}</small>
             </p>
         </li>
     {% endfor %}
