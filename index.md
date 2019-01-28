@@ -7,7 +7,14 @@ layout: default
     {% for repo in site.github.public_repositories %}
         <li>
             <p>
-                <a href="{{ repo.html_url }}">{{ repo.name }}</a> {{ repo.description }}
+                <a href="{{ repo.html_url }}">{{ repo.name }}</a>
+                
+                {% if repo.homepage %}
+                <a href="{{ repo.homepage }}">↗️</a>
+                {% endif %}
+                
+                {{ repo.description }}
+                
                 <br>
                 <small><b>{{ repo.language }}</b> Updated on {{ repo.updated_at | date: "%b %d, %Y" }}</small>
             </p>
