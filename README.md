@@ -1,2 +1,2 @@
 # Open-Source
-rime.social
+Social page
