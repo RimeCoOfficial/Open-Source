@@ -10,7 +10,7 @@ layout: default
                 <a href="{{ repo.html_url }}">{{ repo.name }}</a>
                 
                 {% if repo.homepage %}
-                <a href="{{ repo.homepage }}">↗️</a>
+                    <a href="{{ repo.homepage }}" target="_blank">↗️</a>
                 {% endif %}
                 
                 {{ repo.description }}
