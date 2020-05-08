@@ -1,2 +1,2 @@
-# Open-Source
-Social page
+# Open Source
+List GitHub repos & members
