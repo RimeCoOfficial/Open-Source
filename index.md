@@ -27,5 +27,5 @@ layout: default
 </ol>
 
 <p>
-    Build Revision: <a href="./site.github.json">{{ site.github.build_revision | truncate: 7, "" }}</a>
+    Build Revision <a href="./site.github.json">{{ site.github.build_revision | truncate: 7, "" }}</a>
 </p>
