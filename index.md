@@ -19,13 +19,15 @@ layout: default
 
 <h1>Organization Members</h1>
 
-{% for contributor in site.github.organization_members %}
-<div class="gallery">
-    <a href="{{ contributor.html_url }}" class="thumbnail" title="@{{ contributor.login }}">
-        <img src="{{ contributor.avatar_url }}" alt="{{ contributor.login }}">
-    </a>
+<div class="row">
+    {% for contributor in site.github.organization_members %}
+    <div class="col">
+        <a href="{{ contributor.html_url }}" class="thumbnail" title="@{{ contributor.login }}">
+            <img src="{{ contributor.avatar_url }}" alt="{{ contributor.login }}">
+        </a>
+    </div>
+    {% endfor %}
 </div>
-{% endfor %}
 
 <p>
     Build Revision <a href="./site.github.json">{{ site.github.build_revision | truncate: 7, "" }}</a>
