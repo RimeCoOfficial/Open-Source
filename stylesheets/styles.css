@@ -272,6 +272,16 @@ footer {
 
 /* Bootstrap */
 
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col {
+    width: 30%;
+    float: left;
+}
+
 .thumbnail {
     display: block;
     padding: 4px;
@@ -282,21 +292,10 @@ footer {
     border-radius: 4px;
     -webkit-transition: border .2s ease-in-out;
     -o-transition: border .2s ease-in-out;
-    transition: border .2s ease-in-out;
-  
-    width: 50%;
+    transition: border .2s ease-in-out;  
 }
 
 .thumbnail>img, .thumbnail a>img {
     margin-left: auto;
     margin-right: auto;
-}
-
-@media (min-width: 992px)
-.col-md-3 {
-    width: 25%;
-}
-
-.col-xs-6 {
-    width: 50%;
 }
