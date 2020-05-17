@@ -272,6 +272,12 @@ footer {
 
 /* Thumbnails */
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* Three columns side by side */
 .col {
   float: left;
@@ -287,5 +293,3 @@ footer {
     display: block;
   }
 }
-
-
