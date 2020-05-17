@@ -18,13 +18,14 @@ layout: default
 </ul>
 
 <h1>Organization Members</h1>
-<ol>
-    {% for contributor in site.github.organization_members %}
-        <li>
-            <a href="{{ contributor.html_url }}">{{ contributor.login }}</a>
-        </li>
-    {% endfor %}
-</ol>
+
+{% for contributor in site.github.organization_members %}
+    <div style="">
+    <a href="{{ contributor.html_url }}" class="thumbnail" title="@{{ contributor.login }}">
+      <img src="{{ contributor.avatar_url }}" alt="{{ contributor.login }}">
+    </a>
+    </div>
+{% endfor %}
 
 <p>
     Build Revision <a href="./site.github.json">{{ site.github.build_revision | truncate: 7, "" }}</a>
