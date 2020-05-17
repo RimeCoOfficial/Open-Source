@@ -278,13 +278,19 @@ footer {
     clear: both;
 }
 
+.col {
+    width: 30%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+}
+
 @media (min-width: 992px) {
     .col {
         width: 25%;
     }
-}
-.col {
-    width: 50%;
 }
 
 .thumbnail {
