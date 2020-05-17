@@ -270,30 +270,41 @@ footer {
   }
 }
 
-/* CSS Image Gallery */
+/* Bootstrap */
 
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
+.row {
+    content: " ";
+    display: table;
+    clear: both;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+@media (min-width: 992px) {
+    .col {
+        width: 25%;
+    }
 }
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
+.col {
+    width: 50%;
 }
 
 .thumbnail {
-  width: 100px;
-  height: 100px;
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+.thumbnail>img, .thumbnail a>img {
+    margin-left: auto;
+    margin-right: auto;
+  
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
