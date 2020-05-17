@@ -20,11 +20,11 @@ layout: default
 <h1>Organization Members</h1>
 
 {% for contributor in site.github.organization_members %}
-    <div style="">
+<div style="">
     <a href="{{ contributor.html_url }}" class="thumbnail" title="@{{ contributor.login }}">
-      <img src="{{ contributor.avatar_url }}" alt="{{ contributor.login }}">
+        <img src="{{ contributor.avatar_url }}" alt="{{ contributor.login }}">
     </a>
-    </div>
+</div>
 {% endfor %}
 
 <p>
